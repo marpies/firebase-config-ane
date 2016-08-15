@@ -31,7 +31,7 @@ If you specified a value for `ga_trackingId` in `values.xml` then also set the s
 
 ### Package the extension
 
-The extension needs to be repackaged with the new values you have specified. Navigate to the [build](build/) directory from your command line and run:
+The extension needs to be repackaged with the new values you have specified. Set correct path to AIR SDK in [build.properties](build/build.properties) file, navigate to the [build](build/) directory from your command line and run:
 
 ```
 ant package
