@@ -41,7 +41,7 @@ File named `com.marpies.ane.firebase.config.ane` will be created in the [bin](bi
 
 ```xml
 <extensions>
-    <extensionID>com.marpies.ane.facedetection</extensionID>
+    <extensionID>com.marpies.ane.firebase.config</extensionID>
 </extensions>
 ```
 
