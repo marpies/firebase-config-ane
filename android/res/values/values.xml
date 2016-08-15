@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Present in all applications -->
+    <string name="google_app_id" translatable="false">X:XXXXXXXXXX:android:XXXXXXXXXXXXXXXX</string>
+
+    <!-- Present in applications with the appropriate services configured -->
+    <string name="gcm_defaultSenderId" translatable="false">XXXXXXXXXX</string>
+    <string name="default_web_client_id" translatable="false">XXXXXXXXXX-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://xxxxxxx.firebaseio.com</string>
+    <string name="google_api_key" translatable="false">xxx_api_key_xxx</string>
+    <string name="google_crash_reporting_api_key" translatable="false">xxx_api_key_xxx</string>
+
+    <!-- Comment out or remove the element below if Google Analytics tracking id is not available for your app -->
+    <string name="ga_trackingId" translatable="false">UA-XXXXXXXX-X</string>
+
+</resources>

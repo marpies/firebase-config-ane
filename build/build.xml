@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="FirebaseConfig build scripts" default="package">
+
+    <!-- Config -->
+    <property file="build.properties"/>
+
+    <!--
+
+    ================================================================
+                                Package
+    ================================================================
+
+    -->
+    <target name="package" description="Create the extension package">
+        <copy todir="temp/android/com.marpies.ane.firebase.config-res/">
+            <fileset dir="../android/res/"/>
+        </copy>
+
+        <exec executable="${air.sdk}/bin/adt${bin.ext}" failonerror="true" dir="temp/">
+            <arg value="-package"/>
+            <arg value="-target"/>
+            <arg value="ane"/>
+            <arg value="${packageName}.ane"/>
+            <arg value="../extension.xml"/>
+            <arg line="-swc swc/${name}.swc"/>
+            <arg line="-platform Android-ARM -platformoptions ../platform-android.xml -C android/ ."/>
+            <arg line="-platform Android-x86 -platformoptions ../platform-android.xml -C android/ ."/>
+            <arg line="-platform default -C default/ ."/>
+        </exec>
+
+        <delete dir="temp/android/com.marpies.ane.firebase.config-res" />
+        <copy file="temp/swc/${name}.swc" tofile="../bin/${packageName}.swc" />
+        <move file="temp/${packageName}.ane" todir="../bin"/>
+    </target>
+
+</project>

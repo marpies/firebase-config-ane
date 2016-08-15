@@ -1,0 +1,25 @@
+<extension xmlns="http://ns.adobe.com/air/extension/20.0">
+  <id>com.marpies.ane.firebase.config</id>
+  <versionNumber>1.0.0</versionNumber>
+  <platforms>    
+    <platform name="Android-ARM">
+        <applicationDeployment>
+            <nativeLibrary>libFirebaseConfig.jar</nativeLibrary>
+            <initializer>com.marpies.ane.firebase.config.FirebaseConfigExtension</initializer>
+            <finalizer>com.marpies.ane.firebase.config.FirebaseConfigExtension</finalizer>
+        </applicationDeployment>
+    </platform>
+
+    <platform name="Android-x86">
+        <applicationDeployment>
+            <nativeLibrary>libFirebaseConfig.jar</nativeLibrary>
+            <initializer>com.marpies.ane.firebase.config.FirebaseConfigExtension</initializer>
+            <finalizer>com.marpies.ane.firebase.config.FirebaseConfigExtension</finalizer>
+        </applicationDeployment>
+    </platform>
+
+    <platform name="default">
+        <applicationDeployment/>
+    </platform>
+  </platforms>
+</extension>
