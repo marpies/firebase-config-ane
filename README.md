@@ -33,7 +33,9 @@ If you specified a value for `ga_trackingId` in `values.xml` then also set the s
 
 The extension needs to be repackaged with the new values you have specified. Navigate to the [build](build/) directory from your command line and run:
 
-`ant package`
+```
+ant package
+```
 
 File named `com.marpies.ane.firebase.config.ane` will be created in the [bin](bin/) directory. Copy it to your project directory and add the extension id to your AIR descriptor XML:
 
@@ -42,8 +44,6 @@ File named `com.marpies.ane.firebase.config.ane` will be created in the [bin](bi
     <extensionID>com.marpies.ane.facedetection</extensionID>
 </extensions>
 ```
-
-Done.
 
 ### iOS configuration file
 
