@@ -1,6 +1,6 @@
-# FirebaseConfig
+# Firebase Config
 
-This extension does not provide any API, it's purpose is to package Firebase configuration resources for Android platform.
+Configuration extension for Adobe AIR apps powered by [Firebase](https://github.com/marpies/firebase-core-ane). The extension itself does not provide any API, it's purpose is to package Firebase configuration resources for Android platform.
 
 ## Getting started
 
